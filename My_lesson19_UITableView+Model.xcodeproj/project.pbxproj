@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AFAC862224686D4B005F908D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAC862124686D4B005F908D /* AppDelegate.swift */; };
-		AFAC862424686D4B005F908D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAC862324686D4B005F908D /* SceneDelegate.swift */; };
 		AFAC862624686D4B005F908D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAC862524686D4B005F908D /* ViewController.swift */; };
 		AFAC862924686D4B005F908D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFAC862724686D4B005F908D /* Main.storyboard */; };
 		AFAC862B24686D4D005F908D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFAC862A24686D4D005F908D /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		AFAC861E24686D4B005F908D /* My_lesson19_UITableView+Model.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My_lesson19_UITableView+Model.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFAC862124686D4B005F908D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AFAC862324686D4B005F908D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AFAC862524686D4B005F908D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AFAC862824686D4B005F908D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFAC862A24686D4D005F908D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				AFAC862124686D4B005F908D /* AppDelegate.swift */,
-				AFAC862324686D4B005F908D /* SceneDelegate.swift */,
 				AFAC862524686D4B005F908D /* ViewController.swift */,
 				AFAC862724686D4B005F908D /* Main.storyboard */,
 				AFAC862A24686D4D005F908D /* Assets.xcassets */,
@@ -140,7 +137,6 @@
 			files = (
 				AFAC862624686D4B005F908D /* ViewController.swift in Sources */,
 				AFAC862224686D4B005F908D /* AppDelegate.swift in Sources */,
-				AFAC862424686D4B005F908D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +283,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AJ38HSGQVX;
 				INFOPLIST_FILE = "My_lesson19_UITableView+Model/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +302,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AJ38HSGQVX;
 				INFOPLIST_FILE = "My_lesson19_UITableView+Model/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
