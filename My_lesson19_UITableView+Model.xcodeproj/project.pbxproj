@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		683BBC7D24695B5000A2BE08 /* BrandsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683BBC7C24695B5000A2BE08 /* BrandsListController.swift */; };
+		683BBC8124695BF300A2BE08 /* BrandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683BBC7F24695BF300A2BE08 /* BrandCell.swift */; };
+		683BBC8224695BF300A2BE08 /* BrandCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 683BBC8024695BF300A2BE08 /* BrandCell.xib */; };
+		683BBC8624695DA500A2BE08 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683BBC8524695DA500A2BE08 /* TableCell.swift */; };
+		683BBC8824695DBD00A2BE08 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683BBC8724695DBC00A2BE08 /* NSObject.swift */; };
 		AFAC862224686D4B005F908D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAC862124686D4B005F908D /* AppDelegate.swift */; };
 		AFAC862924686D4B005F908D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFAC862724686D4B005F908D /* Main.storyboard */; };
 		AFAC862B24686D4D005F908D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFAC862A24686D4D005F908D /* Assets.xcassets */; };
@@ -20,6 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		683BBC7C24695B5000A2BE08 /* BrandsListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsListController.swift; sourceTree = "<group>"; };
+		683BBC7F24695BF300A2BE08 /* BrandCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCell.swift; sourceTree = "<group>"; };
+		683BBC8024695BF300A2BE08 /* BrandCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrandCell.xib; sourceTree = "<group>"; };
+		683BBC8524695DA500A2BE08 /* TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		683BBC8724695DBC00A2BE08 /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		AFAC861E24686D4B005F908D /* My_lesson19_UITableView+Model.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My_lesson19_UITableView+Model.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFAC862124686D4B005F908D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFAC862824686D4B005F908D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,6 +55,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		683BBC7E24695B9300A2BE08 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				683BBC7F24695BF300A2BE08 /* BrandCell.swift */,
+				683BBC8024695BF300A2BE08 /* BrandCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		683BBC8324695CC600A2BE08 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				683BBC8724695DBC00A2BE08 /* NSObject.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		683BBC8424695D6000A2BE08 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				683BBC8524695DA500A2BE08 /* TableCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		AFAC861524686D4B005F908D = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +99,7 @@
 		AFAC862024686D4B005F908D /* My_lesson19_UITableView+Model */ = {
 			isa = PBXGroup;
 			children = (
+				683BBC8324695CC600A2BE08 /* Extention */,
 				AFAC862124686D4B005F908D /* AppDelegate.swift */,
 				AFAC86362468766B005F908D /* Model */,
 				AFAC863524687662005F908D /* UI */,
@@ -99,6 +135,7 @@
 		AFAC86372468767A005F908D /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				683BBC8424695D6000A2BE08 /* Views */,
 				AFAC864124687817005F908D /* NavigationController.swift */,
 				AFAC864324687852005F908D /* ViewController.swift */,
 				AFAC864524687B05005F908D /* TableViewController.swift */,
@@ -109,6 +146,8 @@
 		AFAC8638246876CA005F908D /* Brand */ = {
 			isa = PBXGroup;
 			children = (
+				683BBC7E24695B9300A2BE08 /* Cells */,
+				683BBC7C24695B5000A2BE08 /* BrandsListController.swift */,
 			);
 			path = Brand;
 			sourceTree = "<group>";
@@ -186,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFAC862E24686D4D005F908D /* LaunchScreen.storyboard in Resources */,
+				683BBC8224695BF300A2BE08 /* BrandCell.xib in Resources */,
 				AFAC862B24686D4D005F908D /* Assets.xcassets in Resources */,
 				AFAC862924686D4B005F908D /* Main.storyboard in Resources */,
 			);
@@ -198,13 +238,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				683BBC8624695DA500A2BE08 /* TableCell.swift in Sources */,
+				683BBC8824695DBD00A2BE08 /* NSObject.swift in Sources */,
 				AFAC864424687852005F908D /* ViewController.swift in Sources */,
 				AFAC864624687B05005F908D /* TableViewController.swift in Sources */,
 				AFAC864224687817005F908D /* NavigationController.swift in Sources */,
 				AFAC863C24687749005F908D /* Brand.swift in Sources */,
 				AFAC863E24687754005F908D /* Car.swift in Sources */,
+				683BBC8124695BF300A2BE08 /* BrandCell.swift in Sources */,
 				AFAC86402468776D005F908D /* Spec.swift in Sources */,
 				AFAC862224686D4B005F908D /* AppDelegate.swift in Sources */,
+				683BBC7D24695B5000A2BE08 /* BrandsListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

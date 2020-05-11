@@ -9,5 +9,9 @@
 import Foundation
 
 struct Brand {
+    let name: String
     
+    static func testData() -> [Brand] {
+        return [Brand(name: "BMW"), Brand(name: "Honda"), Brand(name: "Volvo")]
+    }
 }
