@@ -9,5 +9,12 @@
 import UIKit
 
 class BrandCell: TableCell { 
+    @IBOutlet private var brandName: UILabel?
+    
+    var brand: Brand? {
+        didSet {
+            brandName?.text = brand?.name
+        }
+    }
     
 }

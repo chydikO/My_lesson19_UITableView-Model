@@ -21,6 +21,15 @@ class BrandsListController: TableViewController {
         dataSourse.append(contentsOf: Brand.testData())
     }
     override func registerCells() {
-        self.tableView?.register(TableCell.nib, forCellReuseIdentifier: BrandCell.reuseIdentifier)
+        self.tableView?.register(BrandCell.nib, forCellReuseIdentifier: BrandCell.reuseIdentifier)
     }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: BrandCell.reuseIdentifier, for: indexPath)
+        if let cell = cell  as? BrandCell, let brand = dataSourse[indexPath.row] as? Brand {
+            cell.brand = brand
+        }
+        return cell
+    }
+    
 }

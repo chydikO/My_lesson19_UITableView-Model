@@ -42,7 +42,7 @@ class TableViewController: ViewController, UITableViewDataSource, UITableViewDel
         
         self.tableView?.dataSource = self
         self.tableView?.delegate = self
-        //self.tableView?.separatorStyle = .none
+        self.tableView?.separatorStyle = .none
         self.tableView?.backgroundColor = .clear
         
         registerCells()
@@ -62,10 +62,19 @@ class TableViewController: ViewController, UITableViewDataSource, UITableViewDel
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        assert(true, "Need override this method  in SubClass")
+//        assert(true, "Need override this method  in SubClass")
+        assert(false, "Need override this method  in SubClass")
         return UITableViewCell()
     }
 
     //MARK: -UITableViewDelegate
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+//    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//        if let cell = cell as? SeparatedProtocol {
+//            cell.separatedView?.isHidden = indexPath.row == dataSource.count - 1
+//        }
+//    }
 }
