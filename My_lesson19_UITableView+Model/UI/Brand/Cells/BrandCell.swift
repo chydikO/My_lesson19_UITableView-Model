@@ -8,13 +8,20 @@
 
 import UIKit
 
-class BrandCell: TableCell { 
+class BrandCell: TableCell {
     @IBOutlet private var brandName: UILabel?
-    
+    @IBOutlet private var separated: UIView?
+
     var brand: Brand? {
         didSet {
             brandName?.text = brand?.name
         }
     }
     
+}
+
+extension BrandCell: SeparatedProtocol {
+    var separatedView: UIView? {
+        return separated
+    }
 }

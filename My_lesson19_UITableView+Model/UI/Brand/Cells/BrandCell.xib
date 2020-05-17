@@ -23,21 +23,31 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DL8-Vg-yTq">
+                        <rect key="frame" x="20" y="43" width="280" height="1"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="52Y-7t-S48"/>
+                        </constraints>
+                    </view>
                 </subviews>
-                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="92n-lZ-kSI" secondAttribute="bottom" constant="10" id="N96-Fl-iSm"/>
                     <constraint firstItem="92n-lZ-kSI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="NKq-I3-iSd"/>
+                    <constraint firstAttribute="bottom" secondItem="DL8-Vg-yTq" secondAttribute="bottom" id="R0k-ZU-617"/>
+                    <constraint firstAttribute="trailing" secondItem="DL8-Vg-yTq" secondAttribute="trailing" constant="20" id="ek7-j5-Tek"/>
                     <constraint firstItem="92n-lZ-kSI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="pNs-RW-fwN"/>
                     <constraint firstAttribute="trailing" secondItem="92n-lZ-kSI" secondAttribute="trailing" constant="20" id="pRP-aX-EAt"/>
+                    <constraint firstItem="DL8-Vg-yTq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="wAC-xd-qFg"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="brandName" destination="92n-lZ-kSI" id="tyD-ph-thW"/>
+                <outlet property="separated" destination="DL8-Vg-yTq" id="7xX-KT-Ri9"/>
             </connections>
-            <point key="canvasLocation" x="139" y="153"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
         </tableViewCell>
     </objects>
 </document>

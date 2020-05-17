@@ -17,19 +17,29 @@ class BrandsListController: TableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        dataSourse.append(contentsOf: Brand.testData())
+
+        dataSource.append(contentsOf: Brand.testData())
     }
     override func registerCells() {
         self.tableView?.register(BrandCell.nib, forCellReuseIdentifier: BrandCell.reuseIdentifier)
     }
     
+    // MARK: - UITableViewDataSource
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: BrandCell.reuseIdentifier, for: indexPath)
-        if let cell = cell  as? BrandCell, let brand = dataSourse[indexPath.row] as? Brand {
+        if let cell = cell  as? BrandCell, let brand = dataSource[indexPath.row] as? Brand {
             cell.brand = brand
         }
         return cell
     }
     
+    //MARK: - UITableViewDelegate
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        super.tableView(tableView, didSelectRowAt: indexPath)
+        
+        if let brand = dataSource[indexPath.row] as? Brand {
+//            let controller = CarsListController(brand: brand)
+//            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
 }

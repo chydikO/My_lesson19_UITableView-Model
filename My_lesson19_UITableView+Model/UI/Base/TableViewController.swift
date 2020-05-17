@@ -10,7 +10,7 @@ import UIKit
 
 class TableViewController: ViewController, UITableViewDataSource, UITableViewDelegate {
 
-    var dataSourse = [Any]()
+    var dataSource = [Any]()
     
     @IBOutlet var tableView: UITableView?
     var tableViewStyle: UITableView.Style {
@@ -20,6 +20,7 @@ class TableViewController: ViewController, UITableViewDataSource, UITableViewDel
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+
     }
     
     //MARK: -Setup TableView
@@ -43,7 +44,7 @@ class TableViewController: ViewController, UITableViewDataSource, UITableViewDel
         self.tableView?.dataSource = self
         self.tableView?.delegate = self
         self.tableView?.separatorStyle = .none
-        self.tableView?.backgroundColor = .clear
+        self.tableView?.backgroundColor = .white
         
         registerCells()
     }
@@ -58,7 +59,7 @@ class TableViewController: ViewController, UITableViewDataSource, UITableViewDel
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSourse.count
+        return dataSource.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -72,9 +73,10 @@ class TableViewController: ViewController, UITableViewDataSource, UITableViewDel
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-//    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-//        if let cell = cell as? SeparatedProtocol {
-//            cell.separatedView?.isHidden = indexPath.row == dataSource.count - 1
-//        }
-//    }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if let cell = cell as? SeparatedProtocol {
+            cell.separatedView?.isHidden = indexPath.row == dataSource.count - 1
+        }
+    }
+    
 }
