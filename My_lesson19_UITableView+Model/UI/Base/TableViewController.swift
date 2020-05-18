@@ -63,9 +63,7 @@ class TableViewController: ViewController, UITableViewDataSource, UITableViewDel
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        assert(true, "Need override this method  in SubClass")
-        assert(false, "Need override this method  in SubClass")
-        return UITableViewCell()
+        fatalError("Need override this method  in SubClass")
     }
 
     //MARK: -UITableViewDelegate

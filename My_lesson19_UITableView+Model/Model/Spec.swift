@@ -9,5 +9,6 @@
 import Foundation
 
 struct Spec {
-    
+    let name: String
+    let price: Float
 }

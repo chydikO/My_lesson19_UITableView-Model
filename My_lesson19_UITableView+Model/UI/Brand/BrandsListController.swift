@@ -10,6 +10,7 @@ import UIKit
 
 class BrandsListController: TableViewController {
 
+    //MARK: - setup
     override func setup() {
         super.setup()
         self.title = "Список брендов"
@@ -20,6 +21,7 @@ class BrandsListController: TableViewController {
 
         dataSource.append(contentsOf: Brand.testData())
     }
+    
     override func registerCells() {
         self.tableView?.register(BrandCell.nib, forCellReuseIdentifier: BrandCell.reuseIdentifier)
     }
@@ -38,8 +40,8 @@ class BrandsListController: TableViewController {
         super.tableView(tableView, didSelectRowAt: indexPath)
         
         if let brand = dataSource[indexPath.row] as? Brand {
-//            let controller = CarsListController(brand: brand)
-//            self.navigationController?.pushViewController(controller, animated: true)
+            let controller = CarsListController(brand: brand)
+            self.navigationController?.pushViewController(controller, animated: true)
         }
     }
 }

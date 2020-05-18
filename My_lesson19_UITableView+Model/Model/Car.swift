@@ -9,5 +9,6 @@
 import Foundation
 
  struct Car {
-    
+    let name: String
+    let specs: [Spec]
  }

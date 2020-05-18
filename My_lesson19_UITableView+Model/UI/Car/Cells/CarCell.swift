@@ -1,27 +1,25 @@
 //
-//  BrandCell.swift
+//  CarCell.swift
 //  My_lesson19_UITableView+Model
 //
-//  Created by OlegChudnovskiy on 11.05.2020.
+//  Created by Олег Чудновский on 18.05.2020.
 //  Copyright © 2020 Олег Чудновский. All rights reserved.
 //
 
 import UIKit
 
-class BrandCell: TableCell {
-    
-    @IBOutlet private var brandName: UILabel?
+class CarCell: TableCell {
+    @IBOutlet private var carName: UILabel?
     @IBOutlet private var separated: UIView?
-
-    var brand: Brand? {
+    
+    var car: Car? {
         didSet {
-            brandName?.text = brand?.name
+            carName?.text = car?.name
         }
     }
-    
 }
 
-extension BrandCell: SeparatedProtocol {
+extension CarCell: SeparatedProtocol {
     var separatedView: UIView? {
         return separated
     }
