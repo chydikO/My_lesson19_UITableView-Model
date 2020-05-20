@@ -47,16 +47,16 @@ class CarsListController: TableViewController {
         return cell
     }
 
-    /*
+    
         //MARK: - UITableViewDelegate
         override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             super.tableView(tableView, didSelectRowAt: indexPath)
             
-            if let brand = dataSource[indexPath.row] as? Brand {
-    //            let controller = CarsListController(brand: brand)
-    //            self.navigationController?.pushViewController(controller, animated: true)
+            if let car = dataSource[indexPath.row] as? Car {
+                let controller = SpecListController(car: car)
+                self.navigationController?.pushViewController(controller, animated: true)
             }
         }
-     */
+     
 }
 
